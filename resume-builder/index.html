@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--========= MY STYLE SHEET =========-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./resume/resume.css" />
+    <title>rb</title>
+  </head>
+  <body>
+    <!-- <header>
+      <h1>Resume Builder</h1>
+      <h2>By @Prithvi12890</h2>
+      <a href="http://youtube.com" target="_blank">How to use?</a>
+    </header> -->
+    <main class="container">
+      <div class="wrapper">
+        <div class="title">Resume Builder</div>
+        <form action="#" autocomplete>
+          <div class="details">
+            <div class="input-box">
+              <label for="fname" class="label">First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Enter your first name"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="lname" class="label">Last Name</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Enter your last name (surname)"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="mail" class="label">Email</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="example@gmail.com"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="phNumber" class="label">Phone Number</label>
+              <input
+                type="number"
+                name="phNumber"
+                id="phNumber"
+                placeholder="1234567890"
+                class="input"
+                required
+              />
+            </div>
+            <fieldset class="profiles">
+              <legend>Profiles</legend>
+              <div class="input-box" id="profileName">
+                <label for="" class="label">Profile Name</label>
+                <input
+                  type="text"
+                  name="profile"
+                  placeholder="LinkedIn"
+                  class="input profileName"
+                  required
+                />
+              </div>
+              <div class="input-box" id="profileLink">
+                <label for="" class="label">Profile Link</label>
+                <input
+                  type="url"
+                  name="profile"
+                  placeholder="Link to profile"
+                  class="input profileLink"
+                  required
+                />
+              </div>
+              <div onclick="addProfile()" class="addBtn">Add</div>
+            </fieldset>
+            <fieldset class="education">
+              <legend>Education</legend>
+              <div class="input-box" id="stream">
+                <label for="" class="label">Stream</label>
+                <input
+                  type="text"
+                  name="stream"
+                  placeholder="BE ECE"
+                  class="input stream"
+                  required
+                />
+              </div>
+              <div class="input-box" id="college">
+                <label for="" class="label">College</label>
+                <input
+                  type="text"
+                  name="college"
+                  placeholder="CBIT"
+                  class="input college"
+                  required
+                />
+              </div>
+              <div class="input-box" id="time">
+                <label for="" class="label">Time</label>
+                <input
+                  type="text"
+                  name="time"
+                  placeholder="2019-2023"
+                  class="input time"
+                  required
+                />
+              </div>
+              <div onclick="addEducation()" class="addBtn">Add</div>
+            </fieldset>
+            <fieldset class="skills">
+              <legend>Skills & Certifications</legend>
+              <div class="input-box" id="skills">
+                <label for="" class="label">Name</label>
+                <input
+                  type="text"
+                  name="skills"
+                  placeholder="Enter Skill/Certification name"
+                  class="input skills"
+                  required
+                />
+              </div>
+              <div onclick="addSkills()" class="addBtn">Add</div>
+            </fieldset>
+            <fieldset class="experience">
+              <legend>Experience</legend>
+              <div class="input-box" id="experience">
+                <label for="" class="label">Title & Description</label>
+                <input
+                  type="text"
+                  name="experienceTitle"
+                  placeholder="Enter Title"
+                  class="input experienceTitle"
+                  required
+                />
+                <input
+                  type="text"
+                  name="experienceDuration"
+                  placeholder="Enter duration and place"
+                  class="input experienceDuration"
+                  required
+                />
+                <textarea
+                  name="experienceDesc"
+                  placeholder="At least 500 words"
+                  class="input experienceDesc"
+                  required
+                ></textarea>
+              </div>
+              <div onclick="addExperience()" class="addBtn">Add</div>
+            </fieldset>
+            <fieldset class="projects">
+              <legend>Projects</legend>
+              <div class="input-box" id="projects">
+                <label for="" class="label">Title & Description</label>
+                <input
+                  type="text"
+                  name="projectsTitle"
+                  placeholder="Enter Title"
+                  class="input projectsTitle"
+                  required
+                />
+                <textarea
+                  name="projectsDesc"
+                  placeholder="At least 500 words"
+                  class="input projectsDesc"
+                  required
+                ></textarea>
+              </div>
+              <div onclick="addProjects()" class="addBtn">Add</div>
+            </fieldset>
+            <fieldset class="achievements">
+              <legend>Achievements</legend>
+              <div class="input-box" id="achievements">
+                <!-- <label for="" class="label">Achievement</label> -->
+                <input
+                  type="text"
+                  name="achievements"
+                  placeholder="Achievement 1 (In a few words)"
+                  class="input achievements"
+                  required
+                />
+              </div>
+              <div onclick="addAchievements()" class="addBtn">Add</div>
+            </fieldset>
+            <fieldset class="clubs">
+              <legend>Clubs & Volunteer Experience</legend>
+              <div class="input-box" id="clubs">
+                <!-- <label for="" class="label">Achievement</label> -->
+                <input
+                  type="text"
+                  name="clubs"
+                  placeholder="Experience 1 (In a few words)"
+                  class="input clubs"
+                  required
+                />
+              </div>
+              <div onclick="addClubs()" class="addBtn">Add</div>
+            </fieldset>
+            <div class="input-box" id="clubs">
+              <label for="photo" class="label">Your Photo (.png or .jpg)</label>
+              <input
+                type="file"
+                name="photo"
+                class="photo"
+                id="photo"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <input type="text" value="Submit" id="submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="bd-container body hidden">
+      <!-- All elements within this div, is generated in PDF -->
+      <div id="area-cv">
+        <div class="resume">
+          <div class="resume__left">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+              <div class="home__container section bd-grid">
+                <div class="home__data bd-grid">
+                  <img
+                    src="./perfil.jpg"
+                    alt="Profile Picture"
+                    class="home__img"
+                    id="home__img"
+                  />
+                  <h1 class="home__title" id="home__title">
+                    SMITH <b>MATTHEW</b>
+                  </h1>
+                  <div class="home__contact bd-grid">
+                    <span class="home__information">
+                      <i class="bx bx-envelope home__icon"></i>
+                      <span id="home__mail">user@email.com</span>
+                    </span>
+                    <span class="home__information">
+                      <i class="bx bx-phone home__icon"></i>
+                      <span id="home__phone">1234567890</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Theme change button -->
+              <!-- Button to generate and download the pdf. Available for desktop. -->
+              <i
+                class="bx bx-download generate-pdf"
+                title="Generate PDF"
+                id="resume-button"
+              ></i>
+            </section>
+
+            <!--========== PROFILE ==========-->
+            <section class="profile section">
+              <h2 class="section-title">PROFILES</h2>
+              <div class="profile__container bd-grid" id="profile__container">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="profile__link"
+                >
+                  <i class="bx bx-hash profile__icon"></i>LinkedIn
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="profile__link"
+                >
+                  <i class="bx bx-hash profile__icon"></i>Hackerrank
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="profile__link"
+                >
+                  <i class="bx bx-hash profile__icon"></i>Github
+                </a>
+              </div>
+            </section>
+
+            <!--========== EDUCATION ==========-->
+            <section class="education section" id="education">
+              <h2 class="section-title">EDUCATION</h2>
+              <div
+                class="education__container bd-grid"
+                id="education__container"
+              >
+                <div class="education__content">
+                  <div class="education__dot">
+                    <div class="education__rounder"></div>
+                    <div class="education__line"></div>
+                  </div>
+                  <div class="education__data bd-grid">
+                    <h3 class="education__stream">BE Electronics</h3>
+                    <span class="education__college">CbIT</span>
+                    <span class="education__time">2019 - 2023</span>
+                  </div>
+                </div>
+                <div class="education__content">
+                  <div class="education__dot">
+                    <div class="education__rounder"></div>
+                    <div class="education__line"></div>
+                  </div>
+                  <div class="education__data bd-grid">
+                    <h3 class="education__stream">BE Electronics</h3>
+                    <span class="education__college">CbIT</span>
+                    <span class="education__time">2019 - 2023</span>
+                  </div>
+                </div>
+                <div class="education__content">
+                  <div class="education__dot">
+                    <div class="education__rounder"></div>
+                    <!-- <div class="education__line"></div> -->
+                  </div>
+                  <div class="education__data bd-grid">
+                    <h3 class="education__stream">BE Electronics</h3>
+                    <span class="education__college">CbIT</span>
+                    <span class="education__time">2019 - 2023</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--========== SKILLS  ==========-->
+            <section class="skills section" id="skills">
+              <h2 class="section-title">Skills & Certifications</h2>
+
+              <div class="skills__content bd-grid">
+                <ul class="skills__data" id="skills__data">
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Html
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>CSS
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>JS
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Something big enough to
+                    fill or extend to a line's length
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="resume__right">
+            <!--========== EXPERIENCE ==========-->
+            <section class="experience section" id="experience">
+              <h2 class="section-title">Experience</h2>
+              <div
+                class="experience__container bd-grid"
+                id="experience__container"
+              >
+                <div class="experience__content">
+                  <div class="experience__dot">
+                    <div class="experience__rounder"></div>
+                    <div class="experience__line"></div>
+                  </div>
+                  <div class="experience__data bd-grid">
+                    <h3 class="experience__title">BE Electronics</h3>
+                    <span class="experience__duration"
+                      >From 2020 to 2021 | Dur Soft Inc</span
+                    >
+                    <p class="experience__description">
+                      sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
+                      gsdfughsdfijgh
+                    </p>
+                  </div>
+                </div>
+                <div class="experience__content">
+                  <div class="experience__dot">
+                    <div class="experience__rounder"></div>
+                    <div class="experience__line"></div>
+                  </div>
+                  <div class="experience__data bd-grid">
+                    <h3 class="experience__title">BE Electronics</h3>
+                    <span class="experience__duration"
+                      >From 2020 to 2021 | Dur Soft Inc</span
+                    >
+                    <p class="experience__description">
+                      sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
+                      gsdfughsdfijgh
+                    </p>
+                  </div>
+                </div>
+                <div class="experience__content">
+                  <div class="experience__dot">
+                    <div class="experience__rounder"></div>
+                    <!-- <div class="experience__line"></div> -->
+                  </div>
+                  <div class="experience__data bd-grid">
+                    <h3 class="experience__title">BE Electronics</h3>
+                    <span class="experience__duration"
+                      >From 2020 to 2021 | Dur Soft Inc</span
+                    >
+                    <p class="experience__description">
+                      sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
+                      gsdfughsdfijgh
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--========== PROJECTS ==========-->
+            <section class="project section" id="project">
+              <h2 class="section-title">Projects</h2>
+
+              <div class="project__container bd-grid" id="projects__container">
+                <div class="project__content">
+                  <h3 class="project__title">Project 1</h3>
+                  <p class="project__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquam, animi! Laboriosam doloribus quidem quisquam itaque
+                    aut dolores quasi.
+                  </p>
+                </div>
+                <div class="project__content">
+                  <h3 class="project__title">Project 2</h3>
+                  <p class="project__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquam, animi! Laboriosam doloribus quidem quisquam itaque
+                    aut dolores quasi.
+                  </p>
+                </div>
+                <div class="project__content">
+                  <h3 class="project__title">Project 3</h3>
+                  <p class="project__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquam, animi! Laboriosam doloribus quidem quisquam itaque
+                    aut dolores quasi.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!--========== ACHIEVEMENTS ==========-->
+            <section class="achievements section" id="achievements">
+              <h2 class="section-title">Achievements</h2>
+
+              <div class="achievements__content bd-grid">
+                <ul class="achievements__data" id="achievements__data">
+                  <li class="achievements__name">
+                    <span class="achievements__circle"></span>Html
+                  </li>
+                  <li class="achievements__name">
+                    <span class="achievements__circle"></span>CSS
+                  </li>
+                  <li class="achievements__name">
+                    <span class="achievements__circle"></span>JS
+                  </li>
+                  <li class="achievements__name">
+                    <span class="achievements__circle"></span>Something big
+                    enough to fill or extend to a line's length
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!--========== CLUBS ==========-->
+            <section class="clubs section" id="clubs">
+              <h2 class="section-title">Clubs & Volunteer Experience</h2>
+
+              <div class="clubs__content bd-grid">
+                <ul class="clubs__data" id="clubs__data">
+                  <li class="clubs__name">
+                    <span class="clubs__circle"></span>Html
+                  </li>
+                  <li class="clubs__name">
+                    <span class="clubs__circle"></span>CSS
+                  </li>
+                  <li class="clubs__name">
+                    <span class="clubs__circle"></span>JS
+                  </li>
+                  <li class="clubs__name">
+                    <span class="clubs__circle"></span>Something big enough to
+                    fill or extend to a line's length
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--========== HTML2PDF ==========-->
+    <!-- <script src="assets/js/html2pdf.bundle.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+    <script src="./resume/resume.js"></script>
+  </body>
+</html>

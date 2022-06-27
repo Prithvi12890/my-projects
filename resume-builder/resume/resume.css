@@ -1,0 +1,440 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --title-color: #0b0a0a;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*========== Variables Dark theme ==========*/
+
+/*========== Button Dark/Light ==========*/
+
+/*========== Font size variables to scale cv ==========*/
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
+/*========== Generate PDF button ==========*/
+.generate-pdf {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.generate-pdf:hover {
+  color: var(--title-color);
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .generate-pdf {
+  display: none;
+}
+.scale-cv .bd-container {
+  max-width: 594px;
+}
+.scale-cv .section {
+  padding: 1rem 0 0.8rem 0;
+}
+.scale-cv .section-title {
+  margin-bottom: 0.75rem;
+}
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  padding: 0 1rem;
+}
+.scale-cv .home__img {
+  width: 90px;
+  height: 90px;
+}
+.scale-cv .home__container {
+  gap: 1.5rem;
+}
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+.scale-cv .bd-grid {
+  gap: 0.25rem;
+}
+.scale-cv .home__title {
+  margin-bottom: var(--mb-2);
+}
+.scale-cv .profile__container {
+  gap: 0.75rem;
+}
+.scale-cv .home__icon,
+.scale-cv .profile__icon {
+  font-size: 1rem;
+}
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .project__container,
+.scale-cv .skills__container {
+  gap: 1rem;
+}
+
+.scale-cv .education__dot,
+.scale-cv .experience__dot {
+  padding-right: 0.5rem;
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder {
+  width: 11px;
+  height: 11px;
+  margin-top: 0.22rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+  width: 1px;
+  height: 110%;
+  transform: translate(5px, 0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .clubs__name,
+.scale-cv .skills__name,
+.scale-cv .achievements__name {
+  margin-bottom: var(--mb-1);
+}
+
+/* .scale-cv  */
+
+/* ========================================== */
+.body {
+  padding: 0;
+  margin: 3rem auto 3rem auto;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+/* ul {
+  padding: 0;
+  list-style: circle;
+} */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== CLASS CSS ==========*/
+.section {
+  padding: 1.5rem 0;
+}
+
+.section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  text-align: center;
+  margin-bottom: var(--mb-3);
+}
+
+/*========== LAYOUT ==========*/
+.bd-container {
+  max-width: 968px;
+  width: (100% - 3rem);
+  /* margin: 0 var(--mb-3); */
+  height: 100vh;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*========== NAV ==========*/
+
+/* Show menu */
+
+/* Active menu link */
+
+/*========== HOME ==========*/
+.home {
+  position: relative;
+}
+
+.home__container {
+  gap: 3rem;
+}
+
+/* .home__data {
+  gap: 0.5rem;
+  text-align: center;
+} */
+
+.home__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.home__address {
+  gap: 1rem;
+}
+
+.home__information {
+  display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home__icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+/*========== PROFILE ==========*/
+.profile__container {
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+
+.profile__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.profile__link:hover {
+  color: var(--title-color);
+}
+
+.profile__icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+/*========== EDUCATION AND EXPERIENCE ==========*/
+.education__content,
+.experience__content {
+  display: flex;
+}
+
+.education__dot,
+.experience__dot {
+  padding-right: 1rem;
+}
+
+.education__rounder,
+.experience__rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-color-light);
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+
+.education__line,
+.experience__line {
+  display: block;
+  width: 2px;
+  height: 110%;
+  background-color: var(--text-color-light);
+  transform: translate(7px, 0);
+}
+
+.education__data,
+.experience__data {
+  gap: 0.5rem;
+}
+
+.education__stream,
+.experience__title {
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+}
+
+.education__college,
+.experience__duration {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.education__time {
+  font-size: var(--smaller-font-size);
+}
+
+/*========== SKILLS AND CERTIFICATIONS & ACHIEVEMENTS & CLUBS ==========*/
+.skills__content,
+.achievements__content,
+.clubs__content {
+  gap: 0;
+}
+
+.skills__data,
+.achievements__data,
+.clubs__data {
+  list-style: none;
+  margin-left: 1.25rem;
+}
+
+.skills__name,
+.achievements__name,
+.clubs__name {
+  /* display: flex;
+  align-items: center;*/
+  margin-bottom: 0.25rem;
+}
+
+.skills__circle,
+.achievements__circle,
+.clubs__circle {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  margin-left: -1.2rem;
+}
+
+/*========== PROJECTS ==========*/
+.project__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+  /* bottom: -20%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background-color: var(--container-color-alt);
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  /* visibility: hidden; */
+}
+
+.scrolltop__icon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+/* .show-scroll {
+  visibility: visible;
+  bottom: 5rem;
+} */
+
+/*========== MEDIA QUERIES ==========*/
+/* Classes modified for large screen size */
+@media screen and (min-width: 968px) {
+  .body {
+    margin: 3rem 0;
+  }
+  .scrolltop {
+    display: none;
+  }
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+  .resume__left,
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+  .section-title {
+    text-align: initial;
+  }
+  .home__container {
+    gap: 1.5rem;
+  }
+}
