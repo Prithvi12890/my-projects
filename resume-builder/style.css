@@ -15,21 +15,25 @@ body {
   padding: 10px;
 }
 
-header {
+#header {
   text-align: center;
 }
 
-header h1 {
+#header-title {
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
 }
 
-header h2 {
+#header-subtext {
   font-size: 20px;
   font-weight: 400;
+  color: antiquewhite;
 }
 
-header a {
+#header-link {
   text-decoration: none;
 }
 
@@ -196,6 +200,35 @@ textarea {
   font-weight: 300;
 }
 
+#footer {
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+#attribution-by {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+#attribution-inspirations-title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+#attribution-inspirations {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+#attribution a {
+  color: antiquewhite;
+  transition: all 0.4s ease;
+}
+#attribution a:hover {
+  color: #000;
+}
+
 @media (max-width: 584px) {
   .wrapper {
     max-width: 100%;
@@ -213,5 +246,5 @@ textarea {
 /* ========== RESUME STYLING ========== */
 
 .hidden {
-  display: none;
+  display: none !important;
 }

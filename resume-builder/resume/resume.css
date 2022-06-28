@@ -60,6 +60,14 @@ body.scale-cv {
   --small-font-size: 0.75rem;
   --smaller-font-size: 0.688rem;
 }
+body.scale-cv {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100%; */
+  max-width: max-content;
+  margin: auto;
+}
 /*========== Generate PDF button ==========*/
 .generate-pdf {
   position: absolute;
@@ -79,7 +87,13 @@ body.scale-cv {
   display: none;
 }
 .scale-cv .bd-container {
-  max-width: 594px;
+  max-width: 794px;
+}
+.scale-cv .resume {
+  height: 1122px;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin-left: -0.5rem;
 }
 .scale-cv .section {
   padding: 1rem 0 0.8rem 0;
@@ -209,10 +223,14 @@ img {
 
 /*========== LAYOUT ==========*/
 .bd-container {
-  max-width: 968px;
   width: (100% - 3rem);
   /* margin: 0 var(--mb-3); */
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
 }
 
 .bd-grid {
@@ -334,7 +352,12 @@ img {
 }
 
 .education__college,
-.experience__duration {
+.experience__duration,
+.experience__description,
+.skills__name,
+.project__description,
+.achievements__name,
+.clubs__name {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }

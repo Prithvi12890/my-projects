@@ -10,7 +10,7 @@ function removeScale() {
 
 /*==================== GENERATE PDF ====================*/
 // PDF generated area
-const areaCv = document.getElementById('area-cv');
+const areaCv = document.querySelector('.resume');
 const resumeButton = document.getElementById('resume-button');
 
 // Html2pdf options
@@ -18,7 +18,7 @@ const opt = {
   margin: 0,
   filename: 'myResume.pdf',
   image: { type: 'jpeg', quality: 0.98 },
-  html2canvas: { scale: 2 },
+  html2canvas: { scale: 4 },
   jsPDF: { format: 'a4', orientation: 'portrait' },
 };
 

@@ -15,11 +15,11 @@
     <title>Resume Builder</title>
   </head>
   <body>
-    <!-- <header>
-      <h1>Resume Builder</h1>
-      <h2>By @Prithvi12890</h2>
-      <a href="http://youtube.com" target="_blank">How to use?</a>
-    </header> -->
+    <header id="header">
+      <h1 id="header-title">Resume Builder</h1>
+      <!-- <h2 id="header-subtext">By @Prithvi12890</h2> -->
+      <a href="#footer" target="_self" id="header-link">How to use?</a>
+    </header>
     <main class="container">
       <div class="wrapper">
         <div class="title">Resume Builder</div>
@@ -228,7 +228,7 @@
             </div>
           </div>
           <div class="button">
-            <input type="text" value="Submit" id="submit" />
+            <input type="button" value="Submit" id="submit" />
           </div>
         </form>
       </div>
@@ -507,6 +507,38 @@
       </div>
     </div>
 
+    <footer id="footer">
+      <div id="ytVideo">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/RJSkEiEIKcY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="attribution">
+        <h2 id="attribution-by">
+          Put together by
+          <a
+            href="https://www.frontendmentor.io/profile/prithvi12890"
+            target="_blank"
+            >@Prithvi12890</a
+          >
+        </h2>
+        <h3 id="attribution-inspirations-title">Inspired by</h3>
+        <h4 id="attribution-inspirations">
+          <a href="https://m.youtube.com/watch?v=oYjseP_Qhv4" target="_blank">
+            <i class="bx bxl-youtube"></i> Bedimcode
+          </a>
+          <a href="https://m.youtube.com/watch?v=aAdt0V3Ro_0" target="_blank">
+            <i class="bx bxl-youtube"></i> Durgesh
+          </a>
+        </h4>
+      </div>
+    </footer>
     <!--========== HTML2PDF ==========-->
     <!-- <script src="assets/js/html2pdf.bundle.min.js"></script> -->
     <script
@@ -516,6 +548,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./script.js"></script>
-    <script src="./resume/resume.js"></script>
+    <!-- <script src="./resume/resume.js"></script> -->
   </body>
 </html>
