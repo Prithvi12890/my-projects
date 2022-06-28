@@ -207,7 +207,7 @@ textarea {
   text-decoration: none;
 }
 #attribution-by {
-  color: #fff;
+  color: #000;
   font-size: 1.25rem;
   font-weight: 500;
   margin-top: 1rem;
@@ -222,14 +222,40 @@ textarea {
   font-size: 0.75rem;
 }
 #attribution a {
-  color: antiquewhite;
+  color: rgb(59, 57, 57);
   transition: all 0.4s ease;
 }
 #attribution a:hover {
-  color: #000;
+  color: #fff;
 }
-
+#mobile-view {
+  display: none;
+  min-width: max-content;
+  min-height: 100vh;
+  background-color: antiquewhite;
+}
 @media (max-width: 584px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  #mobile-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #mobile-view p {
+    font-size: 5rem;
+  }
+  #mobile-view div {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
   .wrapper {
     max-width: 100%;
   }
