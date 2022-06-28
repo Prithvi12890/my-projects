@@ -22,19 +22,25 @@ body {
 #header-title {
   font-size: 45px;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   letter-spacing: 0.25rem;
 }
 
-#header-subtext {
+/* #header-subtext {
   font-size: 20px;
   font-weight: 400;
   color: antiquewhite;
-}
+} */
 
 #header-link {
   text-decoration: none;
+  color: rgb(59, 57, 57);
+  transition: all 0.4s ease;
+}
+
+#header-link:hover {
+  color: #fff;
 }
 
 /* ========== FORM STYLING ========== */
@@ -216,6 +222,7 @@ textarea {
   font-size: 0.8rem;
   font-weight: 400;
   margin-top: 1rem;
+  color: #000;
 }
 #attribution-inspirations {
   font-weight: 400;
