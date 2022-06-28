@@ -194,8 +194,8 @@ body {
 }
 
 textarea {
-  padding: 5px;
   min-height: 10vh;
+  padding: 5px;
   font-size: 15px !important;
   font-weight: 300;
 }
