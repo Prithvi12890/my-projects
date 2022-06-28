@@ -60,11 +60,7 @@ body.scale-cv {
   --small-font-size: 0.75rem;
   --smaller-font-size: 0.688rem;
 }
-body.scale-cv {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* height: 100%; */
+.wrapper-resume {
   max-width: max-content;
   margin: auto;
 }
@@ -225,12 +221,7 @@ img {
 .bd-container {
   width: (100% - 3rem);
   /* margin: 0 var(--mb-3); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: transparent;
+  max-width: 968px;
 }
 
 .bd-grid {

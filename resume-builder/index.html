@@ -233,275 +233,280 @@
         </form>
       </div>
     </main>
-    <div class="bd-container body hidden">
-      <!-- All elements within this div, is generated in PDF -->
-      <div id="area-cv">
-        <div class="resume">
-          <div class="resume__left">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-              <div class="home__container section bd-grid">
-                <div class="home__data bd-grid">
-                  <img
-                    src="./perfil.jpg"
-                    alt="Profile Picture"
-                    class="home__img"
-                    id="home__img"
-                  />
-                  <h1 class="home__title" id="home__title">
-                    SMITH <b>MATTHEW</b>
-                  </h1>
-                  <div class="home__contact bd-grid">
-                    <span class="home__information">
-                      <i class="bx bx-envelope home__icon"></i>
-                      <span id="home__mail">user@email.com</span>
-                    </span>
-                    <span class="home__information">
-                      <i class="bx bx-phone home__icon"></i>
-                      <span id="home__phone">1234567890</span>
-                    </span>
+    <div class="wrapper-resume">
+      <div class="bd-container body hidden">
+        <!-- All elements within this div, is generated in PDF -->
+        <div id="area-cv">
+          <div class="resume">
+            <div class="resume__left">
+              <!--========== HOME ==========-->
+              <section class="home" id="home">
+                <div class="home__container section bd-grid">
+                  <div class="home__data bd-grid">
+                    <img
+                      src="./perfil.jpg"
+                      alt="Profile Picture"
+                      class="home__img"
+                      id="home__img"
+                    />
+                    <h1 class="home__title" id="home__title">
+                      SMITH <b>MATTHEW</b>
+                    </h1>
+                    <div class="home__contact bd-grid">
+                      <span class="home__information">
+                        <i class="bx bx-envelope home__icon"></i>
+                        <span id="home__mail">user@email.com</span>
+                      </span>
+                      <span class="home__information">
+                        <i class="bx bx-phone home__icon"></i>
+                        <span id="home__phone">1234567890</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- Theme change button -->
-              <!-- Button to generate and download the pdf. Available for desktop. -->
-              <i
-                class="bx bx-download generate-pdf"
-                title="Generate PDF"
-                id="resume-button"
-              ></i>
-            </section>
+                <!-- Theme change button -->
+                <!-- Button to generate and download the pdf. Available for desktop. -->
+                <i
+                  class="bx bx-download generate-pdf"
+                  title="Generate PDF"
+                  id="resume-button"
+                ></i>
+              </section>
 
-            <!--========== PROFILE ==========-->
-            <section class="profile section">
-              <h2 class="section-title">PROFILES</h2>
-              <div class="profile__container bd-grid" id="profile__container">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="profile__link"
+              <!--========== PROFILE ==========-->
+              <section class="profile section">
+                <h2 class="section-title">PROFILES</h2>
+                <div class="profile__container bd-grid" id="profile__container">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    class="profile__link"
+                  >
+                    <i class="bx bx-hash profile__icon"></i>LinkedIn
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    class="profile__link"
+                  >
+                    <i class="bx bx-hash profile__icon"></i>Hackerrank
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    class="profile__link"
+                  >
+                    <i class="bx bx-hash profile__icon"></i>Github
+                  </a>
+                </div>
+              </section>
+
+              <!--========== EDUCATION ==========-->
+              <section class="education section" id="education">
+                <h2 class="section-title">EDUCATION</h2>
+                <div
+                  class="education__container bd-grid"
+                  id="education__container"
                 >
-                  <i class="bx bx-hash profile__icon"></i>LinkedIn
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="profile__link"
+                  <div class="education__content">
+                    <div class="education__dot">
+                      <div class="education__rounder"></div>
+                      <div class="education__line"></div>
+                    </div>
+                    <div class="education__data bd-grid">
+                      <h3 class="education__stream">BE Electronics</h3>
+                      <span class="education__college">CbIT</span>
+                      <span class="education__time">2019 - 2023</span>
+                    </div>
+                  </div>
+                  <div class="education__content">
+                    <div class="education__dot">
+                      <div class="education__rounder"></div>
+                      <div class="education__line"></div>
+                    </div>
+                    <div class="education__data bd-grid">
+                      <h3 class="education__stream">BE Electronics</h3>
+                      <span class="education__college">CbIT</span>
+                      <span class="education__time">2019 - 2023</span>
+                    </div>
+                  </div>
+                  <div class="education__content">
+                    <div class="education__dot">
+                      <div class="education__rounder"></div>
+                      <!-- <div class="education__line"></div> -->
+                    </div>
+                    <div class="education__data bd-grid">
+                      <h3 class="education__stream">BE Electronics</h3>
+                      <span class="education__college">CbIT</span>
+                      <span class="education__time">2019 - 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!--========== SKILLS  ==========-->
+              <section class="skills section" id="skills">
+                <h2 class="section-title">Skills & Certifications</h2>
+
+                <div class="skills__content bd-grid">
+                  <ul class="skills__data" id="skills__data">
+                    <li class="skills__name">
+                      <span class="skills__circle"></span>Html
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span>CSS
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span>JS
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span>Something big enough
+                      to fill or extend to a line's length
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <div class="resume__right">
+              <!--========== EXPERIENCE ==========-->
+              <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div
+                  class="experience__container bd-grid"
+                  id="experience__container"
                 >
-                  <i class="bx bx-hash profile__icon"></i>Hackerrank
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="profile__link"
+                  <div class="experience__content">
+                    <div class="experience__dot">
+                      <div class="experience__rounder"></div>
+                      <div class="experience__line"></div>
+                    </div>
+                    <div class="experience__data bd-grid">
+                      <h3 class="experience__title">BE Electronics</h3>
+                      <span class="experience__duration"
+                        >From 2020 to 2021 | Dur Soft Inc</span
+                      >
+                      <p class="experience__description">
+                        sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
+                        gsdfughsdfijgh
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experience__content">
+                    <div class="experience__dot">
+                      <div class="experience__rounder"></div>
+                      <div class="experience__line"></div>
+                    </div>
+                    <div class="experience__data bd-grid">
+                      <h3 class="experience__title">BE Electronics</h3>
+                      <span class="experience__duration"
+                        >From 2020 to 2021 | Dur Soft Inc</span
+                      >
+                      <p class="experience__description">
+                        sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
+                        gsdfughsdfijgh
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experience__content">
+                    <div class="experience__dot">
+                      <div class="experience__rounder"></div>
+                      <!-- <div class="experience__line"></div> -->
+                    </div>
+                    <div class="experience__data bd-grid">
+                      <h3 class="experience__title">BE Electronics</h3>
+                      <span class="experience__duration"
+                        >From 2020 to 2021 | Dur Soft Inc</span
+                      >
+                      <p class="experience__description">
+                        sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
+                        gsdfughsdfijgh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!--========== PROJECTS ==========-->
+              <section class="project section" id="project">
+                <h2 class="section-title">Projects</h2>
+
+                <div
+                  class="project__container bd-grid"
+                  id="projects__container"
                 >
-                  <i class="bx bx-hash profile__icon"></i>Github
-                </a>
-              </div>
-            </section>
-
-            <!--========== EDUCATION ==========-->
-            <section class="education section" id="education">
-              <h2 class="section-title">EDUCATION</h2>
-              <div
-                class="education__container bd-grid"
-                id="education__container"
-              >
-                <div class="education__content">
-                  <div class="education__dot">
-                    <div class="education__rounder"></div>
-                    <div class="education__line"></div>
+                  <div class="project__content">
+                    <h3 class="project__title">Project 1</h3>
+                    <p class="project__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam, animi! Laboriosam doloribus quidem quisquam
+                      itaque aut dolores quasi.
+                    </p>
                   </div>
-                  <div class="education__data bd-grid">
-                    <h3 class="education__stream">BE Electronics</h3>
-                    <span class="education__college">CbIT</span>
-                    <span class="education__time">2019 - 2023</span>
+                  <div class="project__content">
+                    <h3 class="project__title">Project 2</h3>
+                    <p class="project__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam, animi! Laboriosam doloribus quidem quisquam
+                      itaque aut dolores quasi.
+                    </p>
                   </div>
-                </div>
-                <div class="education__content">
-                  <div class="education__dot">
-                    <div class="education__rounder"></div>
-                    <div class="education__line"></div>
-                  </div>
-                  <div class="education__data bd-grid">
-                    <h3 class="education__stream">BE Electronics</h3>
-                    <span class="education__college">CbIT</span>
-                    <span class="education__time">2019 - 2023</span>
-                  </div>
-                </div>
-                <div class="education__content">
-                  <div class="education__dot">
-                    <div class="education__rounder"></div>
-                    <!-- <div class="education__line"></div> -->
-                  </div>
-                  <div class="education__data bd-grid">
-                    <h3 class="education__stream">BE Electronics</h3>
-                    <span class="education__college">CbIT</span>
-                    <span class="education__time">2019 - 2023</span>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!--========== SKILLS  ==========-->
-            <section class="skills section" id="skills">
-              <h2 class="section-title">Skills & Certifications</h2>
-
-              <div class="skills__content bd-grid">
-                <ul class="skills__data" id="skills__data">
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Html
-                  </li>
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>CSS
-                  </li>
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>JS
-                  </li>
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Something big enough to
-                    fill or extend to a line's length
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
-
-          <div class="resume__right">
-            <!--========== EXPERIENCE ==========-->
-            <section class="experience section" id="experience">
-              <h2 class="section-title">Experience</h2>
-              <div
-                class="experience__container bd-grid"
-                id="experience__container"
-              >
-                <div class="experience__content">
-                  <div class="experience__dot">
-                    <div class="experience__rounder"></div>
-                    <div class="experience__line"></div>
-                  </div>
-                  <div class="experience__data bd-grid">
-                    <h3 class="experience__title">BE Electronics</h3>
-                    <span class="experience__duration"
-                      >From 2020 to 2021 | Dur Soft Inc</span
-                    >
-                    <p class="experience__description">
-                      sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
-                      gsdfughsdfijgh
+                  <div class="project__content">
+                    <h3 class="project__title">Project 3</h3>
+                    <p class="project__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam, animi! Laboriosam doloribus quidem quisquam
+                      itaque aut dolores quasi.
                     </p>
                   </div>
                 </div>
-                <div class="experience__content">
-                  <div class="experience__dot">
-                    <div class="experience__rounder"></div>
-                    <div class="experience__line"></div>
-                  </div>
-                  <div class="experience__data bd-grid">
-                    <h3 class="experience__title">BE Electronics</h3>
-                    <span class="experience__duration"
-                      >From 2020 to 2021 | Dur Soft Inc</span
-                    >
-                    <p class="experience__description">
-                      sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
-                      gsdfughsdfijgh
-                    </p>
-                  </div>
+              </section>
+
+              <!--========== ACHIEVEMENTS ==========-->
+              <section class="achievements section" id="achievements">
+                <h2 class="section-title">Achievements</h2>
+
+                <div class="achievements__content bd-grid">
+                  <ul class="achievements__data" id="achievements__data">
+                    <li class="achievements__name">
+                      <span class="achievements__circle"></span>Html
+                    </li>
+                    <li class="achievements__name">
+                      <span class="achievements__circle"></span>CSS
+                    </li>
+                    <li class="achievements__name">
+                      <span class="achievements__circle"></span>JS
+                    </li>
+                    <li class="achievements__name">
+                      <span class="achievements__circle"></span>Something big
+                      enough to fill or extend to a line's length
+                    </li>
+                  </ul>
                 </div>
-                <div class="experience__content">
-                  <div class="experience__dot">
-                    <div class="experience__rounder"></div>
-                    <!-- <div class="experience__line"></div> -->
-                  </div>
-                  <div class="experience__data bd-grid">
-                    <h3 class="experience__title">BE Electronics</h3>
-                    <span class="experience__duration"
-                      >From 2020 to 2021 | Dur Soft Inc</span
-                    >
-                    <p class="experience__description">
-                      sdf sjdbfu jsbdfg jbdfsg dbdgdhfg udfgb fgudfh
-                      gsdfughsdfijgh
-                    </p>
-                  </div>
+              </section>
+
+              <!--========== CLUBS ==========-->
+              <section class="clubs section" id="clubs">
+                <h2 class="section-title">Clubs & Volunteer Experience</h2>
+
+                <div class="clubs__content bd-grid">
+                  <ul class="clubs__data" id="clubs__data">
+                    <li class="clubs__name">
+                      <span class="clubs__circle"></span>Html
+                    </li>
+                    <li class="clubs__name">
+                      <span class="clubs__circle"></span>CSS
+                    </li>
+                    <li class="clubs__name">
+                      <span class="clubs__circle"></span>JS
+                    </li>
+                    <li class="clubs__name">
+                      <span class="clubs__circle"></span>Something big enough to
+                      fill or extend to a line's length
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </section>
-
-            <!--========== PROJECTS ==========-->
-            <section class="project section" id="project">
-              <h2 class="section-title">Projects</h2>
-
-              <div class="project__container bd-grid" id="projects__container">
-                <div class="project__content">
-                  <h3 class="project__title">Project 1</h3>
-                  <p class="project__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam, animi! Laboriosam doloribus quidem quisquam itaque
-                    aut dolores quasi.
-                  </p>
-                </div>
-                <div class="project__content">
-                  <h3 class="project__title">Project 2</h3>
-                  <p class="project__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam, animi! Laboriosam doloribus quidem quisquam itaque
-                    aut dolores quasi.
-                  </p>
-                </div>
-                <div class="project__content">
-                  <h3 class="project__title">Project 3</h3>
-                  <p class="project__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam, animi! Laboriosam doloribus quidem quisquam itaque
-                    aut dolores quasi.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <!--========== ACHIEVEMENTS ==========-->
-            <section class="achievements section" id="achievements">
-              <h2 class="section-title">Achievements</h2>
-
-              <div class="achievements__content bd-grid">
-                <ul class="achievements__data" id="achievements__data">
-                  <li class="achievements__name">
-                    <span class="achievements__circle"></span>Html
-                  </li>
-                  <li class="achievements__name">
-                    <span class="achievements__circle"></span>CSS
-                  </li>
-                  <li class="achievements__name">
-                    <span class="achievements__circle"></span>JS
-                  </li>
-                  <li class="achievements__name">
-                    <span class="achievements__circle"></span>Something big
-                    enough to fill or extend to a line's length
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <!--========== CLUBS ==========-->
-            <section class="clubs section" id="clubs">
-              <h2 class="section-title">Clubs & Volunteer Experience</h2>
-
-              <div class="clubs__content bd-grid">
-                <ul class="clubs__data" id="clubs__data">
-                  <li class="clubs__name">
-                    <span class="clubs__circle"></span>Html
-                  </li>
-                  <li class="clubs__name">
-                    <span class="clubs__circle"></span>CSS
-                  </li>
-                  <li class="clubs__name">
-                    <span class="clubs__circle"></span>JS
-                  </li>
-                  <li class="clubs__name">
-                    <span class="clubs__circle"></span>Something big enough to
-                    fill or extend to a line's length
-                  </li>
-                </ul>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
         </div>
       </div>
