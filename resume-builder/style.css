@@ -191,6 +191,11 @@ body {
   border-radius: 5px;
 }
 
+.addBtn:hover {
+  cursor: pointer;
+  background-color: #894da1;
+}
+
 #skills,
 #experience,
 #projects,
