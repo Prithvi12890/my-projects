@@ -93,7 +93,7 @@ function addExperience() {
   newNode.classList.add('input');
   newNode.setAttribute('name', 'experienceDesc');
   newNode.classList.add('experienceDesc');
-  newNode.setAttribute('placeholder', 'At least 500 words');
+  newNode.setAttribute('placeholder', 'Short description');
 
   experience.appendChild(newNode);
 }
@@ -114,7 +114,7 @@ function addProjects() {
   newNode.classList.add('input');
   newNode.setAttribute('name', 'projectsDesc');
   newNode.classList.add('projectsDesc');
-  newNode.setAttribute('placeholder', 'At least 500 words');
+  newNode.setAttribute('placeholder', 'Short description');
 
   projects.appendChild(newNode);
 }
