@@ -195,7 +195,7 @@ body {
 
 textarea {
   padding: 5px;
-  min-height: 25vh;
+  min-height: 10vh;
   font-size: 15px !important;
   font-weight: 300;
 }
