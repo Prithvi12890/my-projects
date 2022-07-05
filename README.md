@@ -1,7 +1,7 @@
 # Projects
 (Few of my works)
 
-- <a href="http://example.com/" target="_blank">Resume Builder</a>
+- <a href="https://prithvi12890.github.io/my-projects/resume-builder/" target="_blank">Resume Builder</a>
 - <a href="https://www.frontendmentor.io/profile/prithvi12890" target="_blank">Frontend Mentor Challenges</a>
   - <a href="https://prithvi12890.github.io/frontend-mentor-challenges/qr-code-component/" target="_blank">QR Code Card</a>
   - <a href="https://prithvi12890.github.io/frontend-mentor-challenges/nft-preview-card-component/" target="_blank">NFT Preview Card</a>
