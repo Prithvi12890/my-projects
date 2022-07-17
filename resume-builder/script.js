@@ -144,6 +144,20 @@ function addClubs() {
 
   clubs.appendChild(newNode);
 }
+function CheckFileName() {
+  let fileName = document.getElementById('photo').value;
+  if (
+    fileName.split('.')[1].toUpperCase() == 'PNG' ||
+    fileName.split('.')[1].toUpperCase() == 'JPG' ||
+    fileName.split('.')[1].toUpperCase() == 'JPEG'
+  )
+    return true;
+  else {
+    document.getElementById('photo').value = '';
+    alert('Upload a valid file with png/jpg/jpeg extension.');
+    return false;
+  }
+}
 
 // ==== MANIPULATION ====
 function generateCv() {
@@ -323,7 +337,14 @@ function generateCv() {
 }
 
 const generateCvBtn = document.getElementById('submit');
-generateCvBtn.addEventListener('click', generateCv);
+generateCvBtn.addEventListener('click', (e) => {
+  if (document.querySelector('form').checkValidity()) {
+    e.preventDefault();
+    if (CheckFileName()) {
+      generateCv();
+    }
+  }
+});
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/
 function scaleCv() {
